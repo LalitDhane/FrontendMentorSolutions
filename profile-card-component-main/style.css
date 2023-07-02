@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.circleleft {
+  position: absolute;
+  transform: translateX(-30%) translateY(-50%);
+}
+
+.circleright {
+  position: absolute;
+  transform: translateX(80%) translateY(35%);
+}
+
+.ProfileImage img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+.card {
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 380px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.CardBody {
+  height: 75%;
+}
+
+.cover {
+  background-image: url("./images/bg-pattern-card.svg");
+  height: 35%;
+  width: 100%;
+  position: absolute;
+}
+
+.content {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProfileImage {
+  margin-top: 50px;
+}
+
+.NameAndPlace {
+  margin-top: 20px;
+}
+
+.NameAndAge {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.age {
+  margin-left: 10px;
+  font-size: 18px;
+  color: hsl(227, 10%, 46%);
+}
+
+.Place {
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+}
+
+.CardFooter {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.NumberDetail {
+  font-size: 10px;
+  margin-top: 2px;
+  letter-spacing: 2px;
+  color: hsl(227, 10%, 46%);
+}
